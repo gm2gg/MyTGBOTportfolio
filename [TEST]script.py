@@ -149,10 +149,11 @@ def change_word(message):
     bot.send_message(message.chat.id, f"Вот ваше новое слово: {current_city}. Если хочешь выйти из игры, напиши /exit", reply_markup=markup)
 
 def support(message):
-    bot.send_message(message.chat.id, "💬 Связь с поддержкой временно недоступна(")
+    bot.send_message(message.chat.id, "💬 Связь с поддержкой временно недоступна")
 
 if __name__ == '__main__':
     # Запускаем бота. none_stop=True означает, что бот будет перезапускаться после сбоев.
     print("Бот запущен и работает на GitVerse!")
 
     bot.polling(none_stop=True, interval=0)
+
